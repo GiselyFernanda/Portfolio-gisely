@@ -5,43 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Creative Web Typography Styles - Having fun with text styles and effects" />
-    <meta name="keywords" content="css3, typography, styles, letters, creative, effects, transitions, animations" />
+    <meta name="keywords" content="flipping, circle, round, jquery plugin, circular, slideshow, 3d, css 3d transforms" />
     <meta name="author" content="Codrops" />
+
+    <meta name="description" content="Flipping Circle Slideshow" />
     <title> Etec - DS </title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style_home.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Sancreek|Raleway:100' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="../css/styleTS.css">
-    <script type="text/javascript" src="../js/modernizr.custom.79639.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/component.css" />
+    <script src="../js/modernizr.custom.js"></script>
 </head>
 
 <body>
 
-    <div style="background-color: #8a7c9b; padding: 15px; text-align:center; ">
+    <div style="background-color: #b1070e; color: white; padding: 15px; text-align:center; font-family:georgia ;  ">
         <h1> Desenvolvimento de Sistemas </h1>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark na ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#!">Start Bootstrap</a>
+            <a class="navbar-brand" href="#!"><img class="img-logo" src="../images/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <a class="nav-link" href="../index/index-h.html">
-                        <!--icon-->Home</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 na ">
+                    <li class="nav-item nl">
+                        <a class="nav-link" href="../index/index-h.html">
+                            <h5> <img src="../images/house-fill.svg" alt=""> Home</h5>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../index/index-n.html">
-                            <!--icon-->Novidades</a>
+                            <!--icon-->
+                            <h5> <img src="../images/newspaper.svg" alt=""> Novidades</h5>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../index/index-s.html">
-                            <!--icon-->Sobre</a>
+                            <!--icon-->
+                            <h5> <img src="../images/person-lines-fill.svg" alt=""> Sobre</h5>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../index/index-c.html">
-                            <!--icon-->Contato</a>
+                            <!--icon-->
+                            <h5> <img src="../images/file-person-fill.svg" alt=""> Contato</h5>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -49,58 +58,57 @@
 
     <div class="container">
 
-        <br><br><br><br>
+        <br>
 
-        <div class="jumbotron jumbotron-fluid bg-transparent">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-4 col-md-4 text-center tp">
-                        <img class="img-fluid" src="img/Orihime.png" alt="Orihime" title="Orihime">
-                        <h4 class="text-center mt-2 mt-sm-2 mt-md-2">Aluna Gisely Fernanda Dias Pereira</h4>
-                        <p class="text-center">
-                            gisely.pereira@etec.sp.gov.br
-                        </p>
-                        <h4 class="mt-0 mt-sm-2 mt-md-5 d-none d-sm-block">
-                        </h4>
-                        <p class="text-justify text-center mt-2 mt-sm-1 mt-md-1">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente eligendi odit sequi distinctio fuga. Harum enim veritatis reiciendis placeat cumque qui animi fugit doloribus in! Dolorem pariatur fugit unde saepe?
-                        </p>
-                    </div>
-                    <div class="col-12 col-sm-8 offset-md-1 d-none d-sm-block tp2 ">
-
-                        <section class="main">
-
-                            <h2 class="cs-text">
-                                <span class="cs-text-cut">Etec</span>
-                                <span class="cs-text-mid">Lins/SP21</span>
-                                <span class="cs-text-cut">Etec</span>
-                            </h2>
-
-                        </section>
-
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-5">
+                <img class="img-fluid" src="../images/Orihime.png" alt="Orihime" title="Orihime">
+                <h4 class="text-center mt-2 mt-sm-2 mt-md-2">Aluna Gisely Fernanda Dias Pereira</h4>
+                <p class="text-center">
+                    gisely.pereira@etec.sp.gov.br
+                </p>
+                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+            </div>
+            <div class="col-lg-7 d-none d-sm-block">
+                <div class="main">
+                    <div id="fc-slideshow" class="fc-slideshow">
+                        <ul class="fc-slides">
+                            <li class="bg-white"><img src="../images/1.jpg" />
+                                <h3>Hot</h3>
+                            </li>
+                            <li><img src="../images/2.jpg" />
+                                <h3>Cold</h3>
+                            </li>
+                            <li><img src="../images/3.jpg" />
+                                <h3>Light</h3>
+                            </li>
+                            <li><img src="../images/4.jpg" />
+                                <h3>Dark</h3>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-        <br><br><br><br>
-
+    </div>
     </div>
 
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
-        <div class="container px-4 px-lg-5">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+    <footer class="py-5 bg-dark ">
+        <div class="container px-4 px-lg-5 ">
+            <p class="m-0 text-center text-white ">Copyright &copy; Your Website 2021</p>
         </div>
     </footer>
 </body>
 
 <script src="../js/jquery-3.6.0.min.js "></script>
 <script src="../js/bootstrap.min.js "></script>
-<script type="text/javascript" src="../js/jquery.lettering.js"></script>
+<script src="../js/jquery.flipshow.js"></script>
 <script>
-    $(document).ready(function() {
-        $(".cs-text-cut").lettering('words');
+    $(function() {
+
+        $('#fc-slideshow').flipshow();
+
     });
 </script>
 

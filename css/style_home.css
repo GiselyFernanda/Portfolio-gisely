@@ -74,7 +74,6 @@
     -o-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
     -ms-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
     transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
-    background: #000;
     opacity: 0;
 }
 
@@ -186,3 +185,21 @@
 
 
 /* No media query since the extra-large breakpoint has no upper bound on its width */
+
+.img-logo {
+    width: 90px;
+}
+
+.na {
+    background-color: #a30b13;
+    color: white;
+}
+
+.nl {
+    color: white;
+    font-size: large;
+}
+
+h5 {
+    color: white;
+}
