@@ -279,3 +279,8 @@ ul.fc-slides li {
     top: auto;
     margin: 5px;
 }
+
+.is {
+    max-width: 100%;
+    height: auto;
+}
